@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import NotesPage from "./pages/NotesPage";
 import NotePage from "./pages/NotePage";
 
+import "./App.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,9 +19,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <RouterProvider router={router} />
+    <div className="container dark">
+      <div className="app">
+        <Header />
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
